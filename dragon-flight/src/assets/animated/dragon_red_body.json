@@ -1,0 +1,196 @@
+{
+	"frames": {
+		"dragon_body_01.png":
+		{
+			"frame": {"x":1,"y":1,"w":615,"h":476},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":2,"y":2,"w":615,"h":476},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_02.png":
+		{
+			"frame": {"x":1185,"y":1,"w":560,"h":442},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":2,"y":35,"w":560,"h":442},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_03.png":
+		{
+			"frame": {"x":1185,"y":624,"w":564,"h":392},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":0,"y":86,"w":564,"h":392},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_04.png":
+		{
+			"frame": {"x":1747,"y":1,"w":563,"h":296},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {"x":3,"y":180,"w":563,"h":296},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_05.png":
+		{
+			"frame": {"x":1449,"y":1689,"w":566,"h":194},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":4,"y":273,"w":566,"h":194},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_06.png":
+		{
+			"frame": {"x":1330,"y":1444,"w":556,"h":117},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {"x":5,"y":346,"w":556,"h":117},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_07.png":
+		{
+			"frame": {"x":1185,"y":445,"w":560,"h":177},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":8,"y":335,"w":560,"h":177},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_08.png":
+		{
+			"frame": {"x":1659,"y":1137,"w":550,"h":302},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {"x":9,"y":327,"w":550,"h":302},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_09.png":
+		{
+			"frame": {"x":1,"y":1536,"w":554,"h":438},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":10,"y":323,"w":554,"h":438},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_10.png":
+		{
+			"frame": {"x":1,"y":981,"w":553,"h":495},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {"x":12,"y":324,"w":553,"h":495},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_11.png":
+		{
+			"frame": {"x":1,"y":479,"w":552,"h":500},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":12,"y":323,"w":552,"h":500},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_12.png":
+		{
+			"frame": {"x":1111,"y":1018,"w":546,"h":424},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":18,"y":326,"w":546,"h":424},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_13.png":
+		{
+			"frame": {"x":764,"y":831,"w":558,"h":345},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {"x":14,"y":332,"w":558,"h":345},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_14.png":
+		{
+			"frame": {"x":498,"y":981,"w":553,"h":264},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {"x":19,"y":342,"w":553,"h":264},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_15.png":
+		{
+			"frame": {"x":557,"y":1762,"w":557,"h":223},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":14,"y":338,"w":557,"h":223},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_16.png":
+		{
+			"frame": {"x":557,"y":1536,"w":558,"h":224},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":12,"y":311,"w":558,"h":224},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_17.png":
+		{
+			"frame": {"x":1117,"y":1444,"w":561,"h":211},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {"x":9,"y":288,"w":561,"h":211},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_18.png":
+		{
+			"frame": {"x":1751,"y":566,"w":569,"h":254},
+			"rotated": true,
+			"trimmed": true,
+			"spriteSourceSize": {"x":5,"y":222,"w":569,"h":254},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_19.png":
+		{
+			"frame": {"x":618,"y":455,"w":565,"h":374},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":5,"y":105,"w":565,"h":374},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		},
+		"dragon_body_20.png":
+		{
+			"frame": {"x":618,"y":1,"w":565,"h":452},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":3,"y":26,"w":565,"h":452},
+			"sourceSize": {"w":627,"h":826},
+			"anchor": {"x":0.5,"y":0.5}
+		}
+	},
+	"animations": {
+		"dragon_body": ["dragon_body_01.png","dragon_body_02.png","dragon_body_03.png","dragon_body_04.png","dragon_body_05.png","dragon_body_06.png","dragon_body_07.png","dragon_body_08.png","dragon_body_09.png","dragon_body_10.png","dragon_body_11.png","dragon_body_12.png","dragon_body_13.png","dragon_body_14.png","dragon_body_15.png","dragon_body_16.png","dragon_body_17.png","dragon_body_18.png","dragon_body_19.png","dragon_body_20.png"]
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "dragon_red_body.png",
+		"format": "RGBA8888",
+		"size": {"w":2044,"h":2006},
+		"scale": "1",
+		"smartupdate": "$TexturePacker:SmartUpdate:c9e8e63d44c8a165919be80fd88c10fe:40cc41cfc6d757793009fcecab1a6ed2:0f7a8cee2b6c18aa3029d6b93d4857db$"
+	}
+}

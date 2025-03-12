@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread"
+    ],
+    "comments": false,
+    "presets": [
+        ["minify",
+            {
+                "mangle": {
+                    "eval": true,
+                    "topLevel": true
+                },
+                "deadcode": true,
+                "removeUndefined": true,
+                "removeConsole": true
+            }
+        ]
+    ]
+}

@@ -1,0 +1,59 @@
+html,
+body,
+#canvas {
+  /* background-color: #aed9f7; */
+  background: rgb(72,106,203);
+  /* background: linear-gradient(180deg, rgba(72,106,203,1) 0%, rgba(94,136,222,1) 49%, rgba(126,171,244,1) 74%, rgba(195,223,249,1) 100%); */
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  height: 100%;
+  left: 0;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  cursor: none !important;
+}
+
+#UI {
+  z-index: 1;
+}
+
+#weapon-switches {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+#weapon-switches > div {
+  background-color: #000;
+  float: left;
+  padding: 5px;
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+
+#weapon-switches > .selected {
+  background-color: #ca0101;;
+}
+
+#weapon-switches > div > .number {
+  font-size: 12px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#weapon-switches > div > img {
+  width: inherit;
+  height: inherit;
+}
+
+#weapon-switches > div:not(:last-child) {
+  margin-right: 5px;
+}

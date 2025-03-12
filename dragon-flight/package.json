@@ -1,0 +1,35 @@
+{
+  "name": "buildtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "type": "module",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "http-server": "^0.12.1",
+    "pixi.js": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/register": "^7.9.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-minify-mangle-names": "^0.5.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-minify": "^0.5.1",
+    "babel-register": "^6.26.0",
+    "directory-tree": "^2.2.4",
+    "fs-extra": "^9.0.0",
+    "mangle-props": "0.0.1",
+    "merge-files": "^0.1.2",
+    "replace-in-file": "^5.0.2",
+    "rimraf": "^3.0.2",
+    "terser": "^4.6.7"
+  },
+  "scripts": {
+    "build": "node --experimental-modules build.mjs && npx babel --presets minify build/js/index.js --out-file build/js/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

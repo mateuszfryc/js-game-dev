@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Maze Randomizer</title>
+
+    <style>
+      html, body, canvas {
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        line-height: 1;
+        background-color: transparent;
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <script src="canvas.js"></script>
+    <script src="utils.js"></script>
+    <script src="point.js"></script>
+    <script src="wall.js"></script>
+    <script src="cell.js"></script>
+    <script src="maze.js"></script>
+    <script src="_init.js"></script>
+  </body>
+</html>

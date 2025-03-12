@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is this art?</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      html,
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+      }
+
+      #options {
+        display: none;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+      }
+
+      #options > div {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        background: #333;
+        padding: 5px 8px;
+        margin-bottom: 2px;
+        font-size: 11px;
+      }
+
+      #options label {
+        flex: 1 0 auto;
+      }
+
+      #options input {
+        padding: 2px 4px;
+        text-align: left;
+      }
+
+      .button {
+        color: #fff;
+        background-color: #333;
+        cursor: pointer;
+        padding: 5px 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #888;
+        cursor: pointer;
+      }
+
+      #densityValue {
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="instructions">Hold mouse left button and move it to draw</div>
+    <div id="options">
+      <div>
+        <label for="density">Density</label>
+        <div id="densityValue">1</div>
+        <input
+          type="range"
+          min="1"
+          max="200"
+          value="1"
+          step="0.01"
+          name="density"
+          id="density"
+          style="width: 80px"
+        />
+      </div>
+      <button type="button" id="clear" class="button">Clear</button>
+    </div>
+  </body>
+  <script>
+    const canvas = document.createElement('canvas');
+    const draw = canvas.getContext('2d');
+    const instructionsText = document.querySelector('#instructions');
+    const densitySlider = document.querySelector('#density');
+    const densityValue = document.querySelector('#densityValue');
+    const optionsBox = document.querySelector('#options');
+    const clearButton = document.querySelector('#clear');
+    let interpolated = false;
+    let radiusLast = 0;
+    let density = 3;
+    let xLast = 0;
+    let yLast = 0;
+
+    const sin = (n) => Math.sin(performance.now() * n);
+    const on = (eventName, callback, element = document) =>
+      element.addEventListener(eventName, callback);
+
+    on(
+      'input',
+      () => {
+        density = parseFloat(densitySlider.value);
+        densityValue.innerHTML = density;
+      },
+      densitySlider
+    );
+
+    on(
+      'click',
+      () => {
+        draw.clearRect(0, 0, canvas.width, canvas.height);
+      },
+      clearButton
+    );
+
+    on('mousedown', ({ x, y }) => {
+      xLast = x;
+      yLast = y;
+    });
+
+    on('mousemove', ({ buttons, x, y }) => {
+      if (buttons != 1) return;
+
+      const radius = (y / 30) * sin(0.02);
+      let xDiff = x - xLast;
+      let yDiff = y - yLast;
+      const subSteps = Math.ceil(density * 0.1);
+      const radiusStep = (radius - radiusLast) / subSteps;
+      const xStep = xDiff / subSteps;
+      const yStep = yDiff / subSteps;
+
+      draw.strokeStyle = `rgba(100, 100, 100, ${Math.abs(sin(0.01))}`;
+
+      for (let i = 0; i < subSteps; i++) {
+        const r = radiusLast + radiusStep * i;
+
+        draw.beginPath();
+        draw.arc(
+          xLast + xStep * i,
+          yLast + yStep * i,
+          r < 0 ? 1 : r,
+          0,
+          2 * Math.PI
+        );
+        draw.stroke();
+      }
+
+      radiusLast = radius;
+      xLast = x;
+      yLast = y;
+    });
+
+    function updateCanvasSize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    document.onmousedown = () => {
+      const { body } = document;
+      if (body.querySelector('canvas')) return;
+
+      instructionsText.style.display = 'none';
+      optionsBox.style.display = 'flex';
+      body.appendChild(canvas);
+      updateCanvasSize();
+      window.onresize = updateCanvasSize;
+    };
+  </script>
+</html>

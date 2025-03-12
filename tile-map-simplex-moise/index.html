@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Open Simplex Noise Simulation</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="fps">FPS: <span>0</span></div>
+    <div class="UI">
+      <button class="UI-switch">Show / Hide Settings</button>
+      <div class="UI-tools" data-visible="true">
+        <h1>Open Simplex Noise Simulation</h1>
+        <h2>Tiles animated with Perlin and Simplex Noise</h2>
+
+        <div class="option wave-speed">
+          <h3>Wave speed - noise offset per frame:</h3>
+          <div class="value">Value: <span>10</span></div>
+          <input type="range" min="0" max="200" value="10" step="0.1" />
+        </div>
+
+        <div class="option wave-height">
+          <h3>Wave height - noise sample multiplier:</h3>
+          <div class="value">Value: <span>60</span></div>
+          <input type="range" min="0" max="600" value="10" step="0.1" />
+        </div>
+
+        <div class="option wave-length">
+          <h3>Wave length - noise zoom:</h3>
+          <div class="value">Value: <span>10</span></div>
+          <input type="range" min="1" max="100" value="10" step="0.1" />
+        </div>
+
+        <div class="option plateau-round">
+          <label for="plateau-round">
+            <input
+              type="checkbox"
+              id="plateau-round"
+              name="plateau-round"
+              value="false"
+            />
+            Plateau draw - round each sample to 0 or 1
+          </label>
+        </div>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="js/lib/pixi.js"></script>
+    <script src="js/lib/perlin_and_simplex_noise.js"></script>
+    <script src="js/lib/range_slider.js"></script>
+    <script src="js/lib/get_utils.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

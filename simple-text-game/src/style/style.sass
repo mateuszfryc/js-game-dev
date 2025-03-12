@@ -1,0 +1,175 @@
+%text-on-white
+  background: white
+  width: fit-content
+  color: #111
+  padding: 0 8px
+
+$baseMargin: 20px
+$fontSizeNormal: 20px
+$fontSizeSmall: 16px
+
+// box?
+  // background: rgb(24 136 255 / 14%)
+  // border: 1px solid #12ddf5
+
+*
+  padding: 0
+  margin: 0
+  border: 0
+  outline: none
+  font-size: $fontSizeNormal
+  font-family: Droid Sans Mono, monospace
+  line-height: 23px
+
+html
+  background: #000
+
+body
+  overflow: hidden
+  height: 100vh
+  width: 100vw
+
+  & *
+    color: #c0c0c0
+
+#main
+  display: flex
+  flex-direction: column
+  justify-content: end
+  width: calc(100vw - $baseMargin * 2)
+  height: calc(100vh - $baseMargin)
+  max-width: 980px
+  padding: 0 0 $baseMargin $baseMargin
+  overflow: hidden
+  position: relative
+
+#input-container
+  display: flex
+  align-items: center
+  justify-content: left
+  width: 100%
+
+  &::before
+    content: ">"
+    font-size: 130%
+    display: inline
+    width: 10px
+    height: 16px
+    position: relative
+    top: 1px
+    margin: 0 10px 0 0
+
+  input
+    background: transparent
+    display: inline
+    margin-top: 15px
+    width: calc(100% - 25px)
+    flex-grow: 1
+
+#call-to-action
+  @extend %text-on-white
+  margin-top: 15px
+  font-weight: bold
+
+  > span
+    color: #111
+
+.text-small
+  font-size: $fontSizeSmall
+  line-height: 19px
+
+#quick-messages
+  transition: height 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease, border-color 0.5s ease
+  height: 0
+  background: rgba(0,0,0,0.5)
+  overflow-y: auto
+
+  & > p
+    max-width: 900px
+
+    &:not(:last-child)
+      margin-bottom: 16px
+
+    & > span#prefix
+      color: #92d7f4 // #4ccbff
+
+  &.open
+    height: fit-content
+    padding: $baseMargin 40px $baseMargin $baseMargin
+    border-bottom: 1px solid #999
+    box-shadow: 0px -10px 30px 10px #000
+
+#message-log
+  flex-grow: 1
+  border-bottom: 1px solid #999
+  overflow-x: hidden
+  overflow-y: scroll
+  width: calc(100% + $baseMargin)
+  flex-grow: 1
+  padding: $baseMargin $baseMargin $baseMargin 0
+  transition: height 0.5s ease, opacity 0.5s ease, padding 0.5s ease
+
+  &.dimmed
+    opacity: 0.3
+    height: 0
+    padding: 0
+
+  & > p
+    max-width: 900px
+
+    &:not(:last-child)
+      margin-bottom: 16px
+
+    & > span#prefix
+      color: #92d7f4 // #4ccbff
+
+.blue
+  color: #92d7f4
+
+.red
+  color: #fa5f5a // #ff322b
+
+.orange
+  color: #ecc187 // #f79005
+
+.green
+  color: #99f785 // #62ea47
+
+.yellow
+  color: #eec00c // #fed843
+
+.size-hero
+  font-size: 50px
+  line-height: 57px
+
+.margin
+  &-top
+    margin-top: $baseMargin !important
+
+  &-bottom
+    margin-bottom: $baseMargin !important
+
+  &-vertical
+    margin-top: $baseMargin !important
+    margin-bottom: $baseMargin !important
+
+  &-no
+    &-bottom
+      margin-bottom: 0 !important
+
+    &-top
+      margin-top: 0 !important
+
+    &-vertical
+      margin-top: 0 !important
+      margin-bottom: 0 !important
+
+.list
+  &-item
+    padding: 3px 11px
+    width: fit-content
+    margin: 0 !important
+
+  &-selected
+    border: 1px solid #92d7f4
+    padding: 2px 10px

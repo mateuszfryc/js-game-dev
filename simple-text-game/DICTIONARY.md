@@ -1,0 +1,29 @@
+### Dictionary
+
+- you are facing
+- startled - zaskoczony
+- impatiently
+- road runs from
+- toward
+- anxiety
+- confusion
+- down the lane
+- is urging you
+- dog carries on yapping and gulps uncomfortably
+- dimly lit
+- the path/road heads north/down the hill
+- Up a tree/house (when you are there)
+- sits on the table
+- clearing - empty space in between sth (e.g. forst)
+- reluctantly opens to reveal
+- rickety - kulawy
+- damp cellar - wilgotna piwnica
+- all windows are boarded - wszystkie ok. zabite deskami
+- clove of garlic - ząbek czosnku
+- door nailed shut - drzwi zabite gwoździami
+- gothic lettering - gotycki napis
+- steep
+- path continues to the (direction)
+- crime spree
+- this appears to be/have been
+- naked sheet of metal
